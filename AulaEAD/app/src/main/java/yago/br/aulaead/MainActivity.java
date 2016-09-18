@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     public void fazerPesquisa(View v) {
 
         TextView pesquisa = (TextView) findViewById(R.id.fazerPesquisa);
-        String url = "http://www.google.com/";
+        String url = "http://www.google.com/#q=";
         String query = pesquisa.getText().toString().replace(" ", "+").trim();
         String final_url = url + query;
         Uri uri = Uri.parse(final_url);
