@@ -33,7 +33,7 @@ public class TerceiraTela extends AppCompatActivity{
                 classeIMC = "Magreza Leve";
             }
             if(resultado >= 18.5 && resultado < 25){
-                classeIMC = "Saudável";
+                classeIMC = "Parabéns, Você é saudável";
             }
             if(resultado >= 25 && resultado < 30){
                 classeIMC = "Sobrepeso";
@@ -45,7 +45,7 @@ public class TerceiraTela extends AppCompatActivity{
                 classeIMC = "Obesidade Grau II (severa)";
             }
             if(resultado >= 40){
-                classeIMC = "Obesidade Grau III (mórbida)";
+                classeIMC = "Obesidade Grau III (mórbida) voce usado roupa rosa é gêmio do majin boo.";
             }
 
             TextView resultimc = (TextView) findViewById(R.id.resultimc);

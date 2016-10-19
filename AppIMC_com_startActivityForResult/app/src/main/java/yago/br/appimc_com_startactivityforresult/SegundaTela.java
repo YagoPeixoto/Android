@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
+
 
 public class SegundaTela extends AppCompatActivity  {
 
@@ -47,20 +47,6 @@ public class SegundaTela extends AppCompatActivity  {
 
                 imcString = String.valueOf(imcCalculado);
 
-                if(imcCalculado < 0){
-                    Toast.makeText(this,"Informe peso e altura válidos para o cálculo",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(this,MainActivity.class);
-                    startActivity(intent);
-                }
-                if(valorPeso == 0){
-                    Toast.makeText(this,"Informe um peso válido!",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(this,MainActivity.class);
-                    startActivity(intent);
-                }   if(ValorAltura == 0){
-                    Toast.makeText(this,"Informe uma altura válida!",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(this,MainActivity.class);
-                    startActivity(intent);
-                }
             }
         }
     }
